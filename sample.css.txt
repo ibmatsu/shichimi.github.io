@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+html {
+  font-size: 125%;
+}
+body {
+  color: #333;
+  font-size: 0.75rem;
+  font-family: 'Raleway', sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
+
+.site-title {
+  width: 100px;
+  line-height: 1px;
+  margin: 0 auto 36px auto;
+}
+.site-title a {
+  display: block;
+}
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sec-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+  max-width: 1000px;
+  padding: 50px 0 30px 0;
+  margin: 0 auto 50px auto;
+  border-bottom: solid 1px #c3c3c3;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .menu,
+nav .login {
+  display: flex;
+  align-items: center;
+}
+nav .menu li {
+  margin-right: 20px;
+}
+nav .login li {
+  margin-left: 20px;
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 80px;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 500px;
+  object-fit: cover;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+
+.inline_box {
+width: 100%;
+height: 200px
+overflow-y: scroll;
+background: #ffffff;
+border: 1px solid #cccccc;
+padding: 10px;
+}
+
+・wrapper {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.readmore {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.readmore a {
+  padding-bottom: 1px;
+  color: #333;
+  position: relative;
+}
+
+.readmore a::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #333;
+  transition: all 200ms ease;
+}
+
+.readmore a:hover::after {
+  opacity: 0;
+  transform: translateY(3px);
+}
+
+.box {
+  width: 700px;                /* 横幅を200pxに指定 */
+  height: 400px;               /* 横幅を200pxに指定 */
+
+  overflow-y: scroll;          /* 縦方向にスクロール可能にする */
+}
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+  padding: 10px 0;
+}
+#footer .copyright {
+  font-size: 0.625rem;
+  text-align: center;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 896px) {
+
+  .site-title {
+    margin-bottom: 40px;
+  }
+
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #header {
+    margin-bottom: 30;
+    border-bottom: none;
+    padding: 36px 16px 16px 16px;
+  }
+  /*
+  横スクロールできるようにする
+  */
+  nav {
+    overflow-x: scroll;
+  }
